@@ -1,7 +1,6 @@
 *.log
 .DS_Store
 DS_Store
-node_modules
 dist
 yarn.lock
 package-lock.json
