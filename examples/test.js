@@ -1,6 +1,3 @@
-## Usage
-
-```js
 const Artifacts = require("../dist");
 
 const configs = {
@@ -31,4 +28,3 @@ const envs = {
 
 const atfs = new Artifacts();
 atfs.create(configs, envs);
-```
