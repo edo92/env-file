@@ -1,58 +1,52 @@
 {
-  "version": "1.0.0",
-  "license": "MIT",
-  "main": "dist/index.d.js",
-  "name": "@edo92/wifi-net",
-  "author": "edo92",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/edo92/wifi-net"
-  },
-  "keywords": [
-    "network",
-    "wifi",
-    "node wifi",
-    "wifi-control",
-    "control wifi with node.js"
-  ],
-  "typings": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
-  "engines": {
-    "node": "14.7.0"
-  },
-  "browser": {
-    "child_process": false
-  },
-  "scripts": {
-    "dev": "nodemon -e ts -w ./src -x ts-node src/index.ts",
-    "test": "tsdx test",
-    "lint": "tsdx lint",
-    "build": "tsc",
-    "clear:artifacts": "rm appSpec.yml && rm taskdef.json",
-    "clear:dist": "rm -rf dist",
-    "clear": "npm run clear:artifacts && npm run clear:dist"
-  },
-  "husky": {},
-  "module": "dist/index.esm.js",
-  "devDependencies": {
-    "@types/node": "^14.0.27",
-    "@types/webpack": "^4.41.21",
-    "dotenv": "^8.2.0",
-    "husky": "^4.2.5",
-    "nodemon": "^2.0.4",
-    "ts-loader": "^8.0.2",
-    "ts-node": "^8.10.2",
-    "tsdx": "^0.13.2",
-    "tslib": "^2.0.0",
-    "typescript": "^3.9.7",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-node-externals": "^2.5.2"
-  }
+    "version": "1.0.0",
+    "license": "MIT",
+    "main": "dist/index.d.js",
+    "name": "@edo92/env-files",
+    "author": "edo92",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/edo92/env-file.git"
+    },
+    "keywords": [
+        "env",
+        "swipe $variables with values"
+    ],
+    "typings": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "engines": {
+        "node": "14.7.0"
+    },
+    "browser": {
+        "child_process": false
+    },
+    "scripts": {
+        "dev": "nodemon -e ts -w ./src -x ts-node src/index.ts",
+        "test": "tsdx test",
+        "lint": "tsdx lint",
+        "build": "tsc",
+        "clear:artifacts": "rm appSpec.yml && rm taskdef.json",
+        "clear:dist": "rm -rf dist",
+        "clear": "npm run clear:artifacts && npm run clear:dist"
+    },
+    "husky": {},
+    "module": "dist/index.esm.js",
+    "devDependencies": {
+        "@types/node": "^14.0.27",
+        "husky": "^4.2.5",
+        "nodemon": "^2.0.4",
+        "ts-loader": "^8.0.2",
+        "ts-node": "^8.10.2",
+        "tsdx": "^0.13.2",
+        "tslib": "^2.0.0",
+        "typescript": "^3.9.7",
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12",
+        "webpack-node-externals": "^2.5.2"
+    },
+    "description": "replace env $variables with env values",
+    "homepage": "https://github.com/edo92/env-file#readme"
 }
