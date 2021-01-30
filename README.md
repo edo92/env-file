@@ -4,20 +4,20 @@
 const Artifacts = require("../dist");
 
 const configs = {
-  files: {
-    appSpec: {
+  files: [
+    {
       template: "./appSpec.yml",
       filename: "appSpec",
       ext: "yml",
-      buildTo: "../",
+      saveTo: "../",
     },
-    taskdef: {
+    {
       template: "./taskdef.json",
       filename: "taskdef",
       ext: "json",
-      buildTo: "../",
+      saveTo: "../",
     },
-  },
+  ],
 };
 
 const envs = {
@@ -29,6 +29,5 @@ const envs = {
   $CONTAINER_PORT: 80,
 };
 
-const atfs = new Artifacts();
-atfs.create(configs, envs);
+new Artifacts().create(configs, envs);
 ```

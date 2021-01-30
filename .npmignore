@@ -11,3 +11,4 @@ test
 .github
 package-lock.json
 .example.env
+src
