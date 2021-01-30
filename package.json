@@ -2,7 +2,7 @@
     "version": "1.0.0",
     "license": "MIT",
     "main": "dist/index.d.js",
-    "name": "@edo92/env-files",
+    "name": "env-files",
     "author": "edo92",
     "repository": {
         "type": "git",
@@ -48,5 +48,11 @@
         "webpack-node-externals": "^2.5.2"
     },
     "description": "replace env $variables with env values",
-    "homepage": "https://github.com/edo92/env-file#readme"
+    "homepage": "https://github.com/edo92/env-file#readme",
+    "bugs": {
+        "url": "https://github.com/edo92/env-file/issues"
+    },
+    "directories": {
+        "example": "examples"
+    }
 }
